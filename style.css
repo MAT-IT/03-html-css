@@ -1,0 +1,25 @@
+label input{
+    display: none;
+}
+label{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 40px;
+    position: relative;
+    margin: 5px;
+}
+span{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: red;
+    position: absolute;
+    top:5px;
+    left:5px;
+    transition: 300ms all;
+}
+label input:checked+ span{
+    left: 65px;
+}
